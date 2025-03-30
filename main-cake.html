@@ -56,14 +56,19 @@
           <li class="li-header"><a class="a-header" href="">Блоки</a></li>
         </ul>
         <div style="display: flex; flex-direction: column; align-items: center">
-          <button class="button-sig">
+          <button class="button-sig" id="authButton">
             <i class="fa-solid fa-user i-sig"></i>
             <div class="line-sig"></div>
             <p class="p-sig">Авторизация</p>
           </button>
+          <button class="button-user" id="userButton">
+            <i class="fa-solid fa-user i-sig"></i>
+            <div class="line-sig"></div>
+            <p class="p-user" id="userName">Null</p>
+          </button>
           <div class="menu-sign">
             <button class="button-sign">
-              <img class="img-sign" src="img-sign/img-sign.png" alt="" />Google
+              <i class="fa-solid fa-user i-sigl"></i>Login
             </button>
           </div>
         </div>
@@ -77,12 +82,45 @@
           <div class="line-ques"></div>
           <p class="p-ques">Помощь</p>
         </button>
+        <button class="button-exit" id="buttonExit">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
       </div>
     </header>
     <main>
       <div class="div-main"></div>
     </main>
+    <div class="div-name" id="authMenu">
+      <h1 class="div-name-h1">Авторизация</h1>
+      <div class="div-inp-name">
+        <i class="fa-solid fa-user i-user"></i>
+        <input
+          min="6"
+          max="12"
+          type="text"
+          class="div-input-name"
+          id="username"
+          placeholder="Максимум 12 символов"
+        />
+      </div>
+      <div class="div-inp-name">
+        <i class="fa-solid fa-lock i-user"></i>
+        <input
+          min="8"
+          max="32"
+          type="password"
+          id="password"
+          class="div-input-password"
+          placeholder="Максимум 32 символа"
+        />
+        <i class="fa-solid fa-eye i-eye"></i>
+        <i class="fa-solid fa-eye-slash i-eye-closed hidden"></i>
+      </div>
+      <p class="p-wrong-name">Неверное имя пользователя <br />или пароль!</p>
+      <button class="div-button-name" id="continueButton">Продолжить</button>
+    </div>
     <div class="overflow-ch"></div>
-    <script src="main-cake.js"></script>
+    <div class="overflow-au"></div>
+    <script type="module" src="main-cake.js"></script>
   </body>
 </html>
