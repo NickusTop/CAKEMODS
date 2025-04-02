@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft-Download</title>
+    <link rel="stylesheet" href="download-minecraft.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="div-header">
+        <a href="main-cake.html"
+          ><img src="img-header/logo.png" alt="" class="logo-header"
+        /></a>
+        <ul class="ul-header">
+          <li class="li-header">
+            <a id="a-choose" class="a-header">Выбрать</a>
+            <div class="div-choose">
+              <button class="button-ch">
+                <img class="img-ch" src="img-choose/img-mods.png" alt="" />Моды
+              </button>
+              <button class="button-ch">
+                <img
+                  class="img-ch"
+                  src="img-choose/img-tex.png"
+                  alt=""
+                />Текстуры
+              </button>
+              <button class="button-ch">
+                <img class="img-ch" src="img-choose/img-maps.png" alt="" />Карты
+              </button>
+              <button class="button-ch">
+                <img class="img-ch" src="img-choose/img-seeds.png" alt="" />Сиды
+              </button>
+              <button class="button-ch">
+                <img
+                  class="img-ch"
+                  src="img-choose/img-shaders.png"
+                  alt=""
+                />Шейдеры
+              </button>
+            </div>
+          </li>
+          <li class="li-header">
+            <a id="dwnl" class="a-header">Скачать Майнкрафт</a>
+          </li>
+          <li class="li-header"><a class="a-header" href="">Рецепты</a></li>
+          <li class="li-header"><a class="a-header" href="">Блоки</a></li>
+        </ul>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <button class="button-sig" id="authButton">
+            <i class="fa-solid fa-user i-sig"></i>
+            <div class="line-sig"></div>
+            <p class="p-sig">Авторизация</p>
+          </button>
+          <button class="button-user" id="userButton">
+            <i class="fa-solid fa-user i-sig"></i>
+            <div class="line-sig"></div>
+            <p class="p-user" id="userName">Null</p>
+          </button>
+          <div class="menu-sign">
+            <button class="button-sign">
+              <i class="fa-solid fa-user i-sigl"></i>Login
+            </button>
+          </div>
+        </div>
+        <button class="button-lan">
+          <i class="fa-solid fa-language i-lan"></i>
+          <div class="line-lan"></div>
+          <p class="p-lan">Русский</p>
+        </button>
+        <button class="button-ques">
+          <i class="fa-regular fa-circle-question i-ques"></i>
+          <div class="line-ques"></div>
+          <p class="p-ques">Помощь</p>
+        </button>
+        <button class="button-exit" id="buttonExit">
+          <i class="fa-solid fa-right-from-bracket"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <div class="div-main">
+        <h1 class="h1-main">Скачать Майнкрафт</h1>
+        <p class="p-main-v">Варианты установки:</p>
+        <button class="button-main-dw">
+          <i class="fa-brands fa-windows i-dw"></i>Windows
+        </button>
+        <button class="button-main-dw">
+          <i class="fa-brands fa-apple i-dw"></i>macOS
+        </button>
+        <button class="button-main-dw">
+          <i class="fa-brands fa-linux i-dw"></i>Flathub (Linux)
+        </button>
+        <p class="p-inst">
+          <a class="a-inst" href=""
+            >Инструкция установки<i
+              class="fa-solid fa-chevron-down i-chevron"
+            ></i
+          ></a>
+        </p>
+      </div>
+    </main>
+    <div class="div-name" id="authMenu">
+      <h1 class="div-name-h1">Авторизация</h1>
+      <div class="div-inp-name">
+        <i class="fa-solid fa-user i-user"></i>
+        <input
+          min="6"
+          max="12"
+          type="text"
+          class="div-input-name"
+          id="username"
+          placeholder="Максимум 12 символов"
+        />
+      </div>
+      <div class="div-inp-name">
+        <i class="fa-solid fa-lock i-user"></i>
+        <input
+          min="8"
+          max="32"
+          type="password"
+          id="password"
+          class="div-input-password"
+          placeholder="Максимум 32 символа"
+        />
+        <i class="fa-solid fa-eye i-eye"></i>
+        <i class="fa-solid fa-eye-slash i-eye-closed hidden"></i>
+      </div>
+      <p class="p-wrong-name">Неверное имя пользователя <br />или пароль!</p>
+      <button class="div-button-name" id="continueButton">Продолжить</button>
+    </div>
+    <div class="overflow-ch"></div>
+    <div class="overflow-au"></div>
+    <script src="download-minecraft.js"></script>
+  </body>
+</html>
