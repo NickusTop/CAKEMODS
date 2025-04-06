@@ -90,6 +90,11 @@ window.addEventListener("load", function () {
     document.getElementById("userButton").style.display = "flex";
     document.getElementById("buttonExit").style.display = "flex";
     document.getElementById("userName").textContent = savedUsername;
+    document.getElementById("a-create").style.display = "flex";
+    document.getElementById("mrt").style.marginRight = "20px";
+  } else {
+    document.getElementById("a-create").style.display = "none";
+    document.getElementById("mrt").style.marginRight = "0px";
   }
 });
 
@@ -116,6 +121,7 @@ document
       document.getElementById("userButton").style.display = "flex";
       document.getElementById("buttonExit").style.display = "flex";
       document.getElementById("userName").textContent = username;
+      location.reload();
     } else {
       pWrong.style.display = "block";
       setTimeout(() => {
@@ -142,6 +148,7 @@ document.getElementById("buttonExit").addEventListener("click", function () {
 
   // Опционально, если нужно очистить сохраненные данные о пользователе из интерфейса
   localStorage.removeItem("username");
+  location.reload();
 });
 document.getElementById("username").addEventListener("input", function () {
   this.value = this.value.replace(/[^a-zA-Z0-9_]/g, "");
