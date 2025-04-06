@@ -56,6 +56,9 @@ li {
   cursor: pointer;
   color: rgb(0, 167, 0);
 }
+#dwnl:hover {
+  cursor: default;
+}
 .p-name-user {
   color: white;
   font-size: 14px;
@@ -473,8 +476,44 @@ li {
   color: white;
   font-family: "Russo One", sans-serif;
 }
+.a-inst {
+  cursor: pointer;
+}
 .i-chevron {
   font-size: 18px;
   color: white;
   margin-left: 10px;
+}
+.div-ns {
+  display: none;
+}
+.p-ns {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.up {
+  rotate: 180deg;
+}
+.down {
+  rotate: 0deg;
+}
+.button-dowmc {
+  font-size: 16px;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  background-color: rgb(41, 41, 41);
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.button-dowmc:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }

@@ -150,3 +150,21 @@ document.getElementById("username").addEventListener("input", function () {
 document.getElementById("password").addEventListener("input", function () {
   this.value = this.value.replace(/[^a-zA-Z0-9_]/g, "");
 });
+
+const aInst = document.querySelector(".a-inst");
+const iCh = document.querySelector(".i-chevron");
+const divNS = document.querySelector(".div-ns");
+
+aInst.addEventListener("click", aInstClick);
+
+function aInstClick() {
+  if (iCh.classList.contains("down")) {
+    divNS.style.display = "block";
+    iCh.classList.remove("down");
+    iCh.classList.add("up");
+  } else if (iCh.classList.contains("up")) {
+    divNS.style.display = "none";
+    iCh.classList.remove("up");
+    iCh.classList.add("down");
+  }
+}
