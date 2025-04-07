@@ -1,0 +1,479 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url(img-header/background.jpg);
+  background-position: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* header */
+
+.div-header {
+  width: 100;
+  background-color: #202020;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ffffff;
+}
+.logo-header {
+  width: 155px;
+}
+.logo-header:hover {
+  cursor: pointer;
+}
+.ul-header {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.a-header {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.li-header:not(:last-child) {
+  margin-right: 20px;
+}
+.li-header:last-child {
+  margin-right: 40px;
+}
+.a-header:hover {
+  cursor: pointer;
+  color: rgb(0, 167, 0);
+}
+#dwnl:hover {
+  cursor: default;
+}
+.dwnl:hover {
+  cursor: default;
+}
+.p-name-user {
+  color: white;
+  font-size: 14px;
+  font-family: "Russo One", sans-serif;
+  height: 16px;
+}
+.button-user {
+  background-color: #444444;
+  height: 40px;
+  padding: 10px;
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+.button-user:hover {
+  background-color: rgb(0, 167, 0);
+}
+.p-user {
+  color: white;
+  font-size: 14px;
+  font-family: "Russo One", sans-serif;
+  height: 16px;
+}
+.button-sig {
+  background-color: #444444;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+.i-sig {
+  color: white;
+  font-size: 22px;
+  margin-right: 10px;
+}
+.line-sig {
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  margin-right: 10px;
+}
+.p-sig {
+  color: white;
+  font-size: 14px;
+  font-family: "Russo One", sans-serif;
+  height: 16px;
+}
+.button-sig:hover {
+  background-color: rgb(0, 167, 0);
+  cursor: pointer;
+}
+.button-lan {
+  background-color: #444444;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.2s ease;
+  margin-left: 40px;
+}
+
+.i-lan {
+  color: #ffffff;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.line-lan {
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.p-lan {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Russo One", sans-serif;
+  height: 16px;
+}
+
+.button-lan:hover {
+  background-color: rgb(0, 167, 0);
+  cursor: pointer;
+}
+
+.button-ques {
+  background-color: #444444;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.2s ease;
+  margin-left: 40px;
+}
+
+.i-ques {
+  color: #ffffff;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.line-ques {
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.p-ques {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Russo One", sans-serif;
+  height: 16px;
+}
+
+.button-ques:hover {
+  background-color: rgb(0, 167, 0);
+  cursor: pointer;
+}
+
+/* header-end */
+
+.div-main {
+  background-color: #202020;
+  width: 75%;
+  margin: 0 auto;
+}
+.div-choose {
+  position: absolute;
+  background-color: rgb(66, 66, 66);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 150px;
+  overflow: auto;
+  margin-top: 10px;
+  display: none;
+  z-index: 1000;
+}
+.button-ch {
+  background-color: rgb(66, 66, 66);
+  border: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 100%;
+  font-family: "Russo One", sans-serif;
+  font-size: 14px;
+  padding: 8px;
+  transition: background-color 0.2s ease;
+}
+.img-ch {
+  width: 35px;
+  margin-right: 10px;
+}
+.button-ch:hover {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+.button-exit {
+  background-color: rgb(66, 66, 66);
+  border: none;
+  display: none;
+  align-items: center;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 24px;
+  padding: 8px;
+  transition: background-color 0.2s ease;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.button-exit:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+.overflow-ch {
+  width: 100%;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+.overflow-au {
+  width: 100%;
+  height: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.541);
+  backdrop-filter: blur(5px);
+}
+.menu-sign {
+  background-color: rgb(66, 66, 66);
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 50px;
+  z-index: 1000;
+  width: 125px;
+  display: none;
+  position: absolute;
+}
+.img-sign {
+  width: 30px;
+  margin-right: 10px;
+}
+.button-sign {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: rgb(66, 66, 66);
+  padding: 10px;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.button-sign:hover {
+  background-color: rgb(44, 44, 44);
+  cursor: pointer;
+}
+.i-sigl {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.div-name {
+  position: fixed;
+  background-color: #00000005;
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  border: 2px solid #ffffff; /* Основной цвет неона */
+}
+.div-name-h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 28px;
+  color: white;
+}
+.div-inp-name {
+  display: flex;
+  margin-top: 20px;
+  width: 250px;
+  height: 20px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ffffff;
+  background-color: rgb(58, 58, 58);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.i-user {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  height: 22px;
+}
+.div-input-name {
+  display: flex;
+  width: 250px;
+  height: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Russo One", sans-serif;
+}
+.div-input-password {
+  display: flex;
+  width: 240px;
+  height: 25px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  margin-right: 10px;
+}
+.i-eye {
+  color: white;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+.i-eye-closed {
+  display: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+.hidden {
+  display: none !important;
+}
+.i-eye-closed:hover {
+  color: #9b9b9b;
+  cursor: pointer;
+}
+.i-eye:hover {
+  color: #9b9b9b;
+  cursor: pointer;
+}
+.div-button-name {
+  margin-top: 10px;
+  height: 30px;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  transition: background-color 0.2s ease;
+}
+
+.div-button-name:hover {
+  background-color: rgb(49, 49, 49);
+}
+.p-wrong-name {
+  color: red;
+  font-family: "Russo One", sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+  text-align: center;
+}
+.p-help-name {
+  color: #ffffff;
+  font-family: "Russo One", sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+#dwnl {
+  color: rgb(0, 167, 0);
+}
+.dwnl {
+  color: rgb(0, 167, 0);
+}
+/* JS END */
+
+.div-main {
+  background-color: #202020;
+  width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.h1-create {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 40px;
+}
+.p-create {
+  color: rgb(0, 167, 0);
+  font-family: "Russo One", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.button-create {
+  background-color: rgb(0, 167, 0);
+  border: none;
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 230px;
+  margin-top: 20px;
+}
+.button-create:hover {
+  background-color: rgb(0, 149, 0);
+}
+.p-we {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.p-we2 {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}

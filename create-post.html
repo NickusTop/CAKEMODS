@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cake Main</title>
-    <link rel="stylesheet" href="main-cake.css" />
+    <title>Create-Post</title>
+    <link rel="stylesheet" href="create-post.css" />
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
@@ -19,7 +19,9 @@
   <body>
     <header>
       <div class="div-header">
-        <img src="img-header/logo.png" alt="" class="logo-header" />
+        <a href="main-cake.html"
+          ><img src="img-header/logo.png" alt="" class="logo-header"
+        /></a>
         <ul class="ul-header">
           <li class="li-header">
             <a id="a-choose" class="a-header">Выбрать</a>
@@ -50,17 +52,13 @@
             </div>
           </li>
           <li class="li-header">
-            <a class="a-header" href="download-minecraft.html"
-              >Скачать Майнкрафт</a
-            >
+            <a class="a-header">Скачать Майнкрафт</a>
           </li>
           <li id="mrt" class="li-header">
             <a class="a-header" href="">Рецепты</a>
           </li>
           <li class="li-header">
-            <a id="a-create" class="a-header" href="create-post.html"
-              >Создать пост</a
-            >
+            <a id="a-create" class="a-header dwnl" href="">Создать пост</a>
           </li>
           <li class="li-header"><a class="a-header" href="">Блоки</a></li>
         </ul>
@@ -97,39 +95,27 @@
       </div>
     </header>
     <main>
-      <div class="div-main"></div>
+      <div class="div-main">
+        <h1 class="h1-create">Создать пост</h1>
+        <p class="p-create">Выберите варианты ниже</p>
+        <button class="button-create">Создать новый пост</button>
+        <button class="button-create">Обновить пост</button>
+        <p class="p-we">Как это работает?</p>
+        <p class="p-we2">
+          1. При выпущенном посте через некоторое время ваш пост будут
+          осматривать модераторы.
+        </p>
+        <p class="p-we2">
+          2. (Успешно) Модераторы примут ваш пост если будет все хорошо.
+        </p>
+        <p class="p-we2">
+          2. (Не Успешно) Модераторы не примут ваш пост если пост не будут
+          следивать нашим правилам.
+        </p>
+        <p class="p-we2">
+          3. (Если пост успешный) Ваш пост выйдет на наш сайт :)
+        </p>
+      </div>
     </main>
-    <div class="div-name" id="authMenu">
-      <h1 class="div-name-h1">Авторизация</h1>
-      <div class="div-inp-name">
-        <i class="fa-solid fa-user i-user"></i>
-        <input
-          min="6"
-          max="12"
-          type="text"
-          class="div-input-name"
-          id="username"
-          placeholder="Максимум 12 символов"
-        />
-      </div>
-      <div class="div-inp-name">
-        <i class="fa-solid fa-lock i-user"></i>
-        <input
-          min="8"
-          max="32"
-          type="password"
-          id="password"
-          class="div-input-password"
-          placeholder="Максимум 32 символа"
-        />
-        <i class="fa-solid fa-eye i-eye"></i>
-        <i class="fa-solid fa-eye-slash i-eye-closed hidden"></i>
-      </div>
-      <p class="p-wrong-name">Неверное имя пользователя <br />или пароль!</p>
-      <button class="div-button-name" id="continueButton">Продолжить</button>
-    </div>
-    <div class="overflow-ch"></div>
-    <div class="overflow-au"></div>
-    <script type="module" src="main-cake.js"></script>
   </body>
 </html>
