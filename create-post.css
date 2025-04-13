@@ -477,3 +477,64 @@ li {
   font-size: 16px;
   margin-top: 10px;
 }
+#crt-post {
+  position: fixed;
+  background-color: #00000005;
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  border: 2px solid #ffffff;
+}
+.crt-post-h1 {
+  font-family: "Russo One", sans-serif;
+  font-size: 28px;
+  color: white;
+}
+.crt-post-p {
+  color: white;
+  font-family: "Russo One", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.crt-post-file {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 250px;
+  height: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(58, 58, 58);
+  border-radius: 5px;
+}
+.custom-file-upload {
+  display: inline-block;
+  background-color: rgb(0, 167, 0);
+  color: white;
+  font-family: "Russo One", sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload input {
+  display: none;
+}
+
+.custom-file-upload:hover {
+  background-color: #45a049; /* Цвет при наведении */
+}
+.custom-file-upload.selected {
+  background-color: #3e8e41; /* Цвет кнопки после выбора файла */
+}

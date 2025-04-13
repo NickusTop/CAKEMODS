@@ -117,5 +117,46 @@
         </p>
       </div>
     </main>
+    <div class="div-name" id="authMenu">
+      <h1 class="div-name-h1">Авторизация</h1>
+      <div class="div-inp-name">
+        <i class="fa-solid fa-user i-user"></i>
+        <input
+          min="6"
+          max="12"
+          type="text"
+          class="div-input-name"
+          id="username"
+          placeholder="Максимум 12 символов"
+        />
+      </div>
+      <div class="div-inp-name">
+        <i class="fa-solid fa-lock i-user"></i>
+        <input
+          min="8"
+          max="32"
+          type="password"
+          id="password"
+          class="div-input-password"
+          placeholder="Максимум 32 символа"
+        />
+        <i class="fa-solid fa-eye i-eye"></i>
+        <i class="fa-solid fa-eye-slash i-eye-closed hidden"></i>
+      </div>
+      <p class="p-wrong-name">Неверное имя пользователя <br />или пароль!</p>
+      <button class="div-button-name" id="continueButton">Продолжить</button>
+    </div>
+    <div id="crt-post">
+      <h1 class="crt-post-h1">Создать пост</h1>
+      <p class="crt-post-p">Выберите .zip с вашими файлами:</p>
+      <label for="file-upload" class="custom-file-upload">
+        Выбрать файл
+        <input id="file-upload" type="file" onchange="updateButtonText()" />
+      </label>
+    </div>
+    <div class="overflow-ch"></div>
+    <div class="overflow-au"></div>
+    <script type="module" src="create-post-main.js"></script>
+    <script type="module" src="create-post.js"></script>
   </body>
 </html>
